@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    background-color: black;
+}
 
 /* Body and font settings */
 body {
@@ -11,11 +14,8 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     color: black;
-   }
-   @media (max-width: 100%) { /* Smaller mobile screens */
-    body {
-      font-size: 12px; /* Further adjust for smaller screens */
-    } }
+}
+    
   
 /* NavBar */
 .navbar {
@@ -32,13 +32,13 @@ body {
 }
 
 .navbar .logo h1 {
-    font-size: 24px;
+    font-size: 24px;  
 }
 
 .nav-links ul {
     list-style-type: none;
     display: flex;
-}
+ }
 
 .nav-links ul li {
     margin-left: 20px;
@@ -74,9 +74,9 @@ body {
 }
 
 .sidebar h2 {
-    color: white;
+    
     font-size: 20px;
-    margin-bottom: 20px;
+  
 }
 
 .sidebar ul {
@@ -104,6 +104,9 @@ body {
     flex-grow: 1;
     padding: 20px;
     background-color: #fff;
+    border-style: outset;
+    border-color: #575656;
+
 }
 
 /* Hero*/
@@ -113,6 +116,9 @@ body {
     padding: 10px 20px 30px 20px ;
     text-align: center;
     border-radius: 10px;
+    border-style: outset;
+    border-color: #575656;
+
 }
 
 .hero h2 {
@@ -130,6 +136,9 @@ body {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    border-style: outset;
+    border-color: #575656;
+
 }
 
 .cta-button:hover {
@@ -140,6 +149,7 @@ body {
 .section {
     padding: 10px 20px 30px 20px ;
     text-align: center;
+    
 }
 
 .section h2 {
@@ -160,8 +170,13 @@ body {
     width: 200px;
     height: 240px;
     padding: 0%;
+    border-style: outset;
+    border-color: #575656;
+    transition: transform 0.3s ease;
 }
-
+.about-image:hover{
+    transform: scale(1.05);
+}
 .about-text p {
     max-width: 800px;
     text-align: justify;
@@ -176,6 +191,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
+    
 }
 
 .project-card {
@@ -184,6 +200,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    
 }
 
 .project-card img {
@@ -191,8 +208,11 @@ body {
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
+    transition: transform 0.3s ease;
 }
-
+.project-card img:hover{
+    transform: scale(1.05);
+}
 .project-link {
     display: inline-block;
     margin-top: 10px;
@@ -217,8 +237,15 @@ body {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    align-content: center
+    align-content: center;
+    border-style: outset;
+    border-color: #575656;
+    transition: transform 0.3s ease;
 }
+.skill-card:hover {
+        transform: scale(1.05);
+}
+
 
 /* Contact*/
 .contact-form {
