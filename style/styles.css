@@ -11,10 +11,12 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     color: black;
-    max-width: 100%;
    }
-
-
+   @media (max-width: 100%) { /* Smaller mobile screens */
+    body {
+      font-size: 12px; /* Further adjust for smaller screens */
+    } }
+  
 /* NavBar */
 .navbar {
     background-color: black;
@@ -378,7 +380,6 @@ body {
 .experience-section1 {
     background: white;
     padding: 0px;
-    max-width: 1000px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
