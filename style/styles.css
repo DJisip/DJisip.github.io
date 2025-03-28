@@ -11,7 +11,9 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     color: black;
-}
+} @media (max-width: 480px) { /* Smaller mobile screens */
+   }
+
 
 /* NavBar */
 .navbar {
@@ -22,8 +24,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-left: 5px solid white;
+    border-left: 5px solid ;
+    border-style: outset;
+    border-color: #1e1e1e;
 }
+
+    @media (max-width: 480px) { /* Smaller mobile screens */
+    body {
+      font-size: 12px; /* Further adjust for smaller screens */
+    }
+    }
 
 .navbar .logo h1 {
     font-size: 24px;
@@ -62,7 +72,9 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    border-left: 5px solid white;
+    border-left: 5px solid;
+    border-style: outset;
+    border-color: #1e1e1e;
 }
 
 .sidebar h2 {
@@ -259,7 +271,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-left: 5px solid white;
+    border-left: 5px solid;
+    border-style: outset;
+    border-color: #1e1e1e;
 
 }
 /* Working Experience */
@@ -376,20 +390,4 @@ body {
     text-align: center;
     justify-content: center;
 
-}
-
-body {
-  font-size: 16px; /* Base font size */
-}
-
-@media (max-width: 768px) { /* Tablet and mobile screens */
-  body {
-    font-size: 14px; /* Reduce font size to prevent zoom */
-  }
-}
-
-@media (max-width: 480px) { /* Smaller mobile screens */
-  body {
-    font-size: 12px; /* Further adjust for smaller screens */
-  }
 }
