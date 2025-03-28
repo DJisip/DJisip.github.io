@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+  
+    
+  <center >
+    <body  class="Box3" style="background-color: black;">
+        <center>
+            <h1 style="color: white;">Thank You!</h1>
+            
+            <p id="nameDisplay"></p>
+            <form action="./index.html" method="get" class="form-background"> 
+            <p style="color: white;">Your contact details have been submitted and have been recorded; please wait at least a day to be contacted.</p>
+        </center>
+        
+        <script>
+          const params = new URLSearchParams(window.location.search);
+          const getName = params.get("name");
+          const nameDisplayElement = document.getElementById("nameDisplay");
+
+          nameDisplayElement.textContent = "Dear " + getName + ", your form has been submitted successfully.";
+
+          nameDisplayElement.style.color = "white";
+      </script>
+      
+
+    <form action="./index.html" method="get">
+      <button class="box1" type="submit"; style="background-color: rgb(0, 0, 0); color: white; border-radius: 5px;">Back to Home</button>
+    </form>
+    </body>
+</center>  
+  
+</head>
+
+</html>
