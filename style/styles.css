@@ -6,6 +6,7 @@
 }
 html{
     background-color: black;
+    border-color: #000000;
 }
 
 /* Body and font settings */
@@ -109,7 +110,7 @@ body {
 
 }
 
-/* Hero*/
+/* Hero profile*/
 .hero {
     background: #000000;
     color: white;
@@ -409,7 +410,7 @@ body {
     background: white;
     padding: 0px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(17, 17, 17, 0.2);
     text-align: center;
     justify-content: center;
 
